@@ -17,6 +17,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { RecipeStartComponent } from './recipes/recipe-start/recipe-start.component';
 import { RecipeEditComponent } from './recipes/recipe-edit/recipe-edit.component';
 import { RecipeService } from './recipes/recipe.service';
+import { ScullyLibModule } from '@scullyio/ng-lib';
 
 
 @NgModule({
@@ -33,7 +34,7 @@ import { RecipeService } from './recipes/recipe.service';
     RecipeStartComponent,
     RecipeEditComponent
   ],
-  imports: [ BrowserModule, FormsModule, ReactiveFormsModule, HttpClientModule, AppRoutingModule],
+  imports: [ BrowserModule, FormsModule, ReactiveFormsModule, HttpClientModule, AppRoutingModule, ScullyLibModule],
   providers: [ShoppingListService, RecipeService],
   bootstrap: [AppComponent]
 })
