@@ -19,7 +19,7 @@ subscription: Subscription;
 
     }
 
-  ngOnInit(): void {
+  ngOnInit() {
     this.subscription = this.recipeService.recipesChanged
     .subscribe(
       (recipes: Recipe[]) => {
